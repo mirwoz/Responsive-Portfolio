@@ -1,0 +1,322 @@
+/* Styling for heading and footer, same across all three pages */
+
+
+header,
+footer {
+
+        margin: 0px;
+        padding: 0px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+}
+
+header {
+        background-color: white;
+        border-bottom: 2px solid lightgray;
+        position: absolute;
+        z-index: -1;
+        height: 80px;
+
+
+}
+
+footer {
+
+        background-color: darkgray;
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        bottom: 0;
+        bottom: 0px;
+        border-top: 5px solid teal;
+        position: sticky;
+        position: -webkit-sticky;
+        height: 50px;
+
+}
+
+body {
+        background-image: url("brickwall.png");
+
+}
+
+/* The links class positions the <a tags on the top right of the screen */
+
+.links {
+        position: absolute;
+        right: 40px;
+        top: 0px;
+        clear: both;
+        padding: 15px;
+        font-family: 'Arial', 'Helevtica Neue', Helvetica, sans-serif;
+        color: #dddddd;
+}
+
+/* I chose to not change the appearance of links if they've been clicked or not */
+
+a:active {
+        text-decoration: none;
+        color: gray;
+}
+
+a:visited {
+        text-decoration: none;
+        color: gray;
+}
+
+a:link {
+        color: gray;
+        text-decoration: none;
+}
+
+h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        background-color: #4aaaa5;
+        position: absolute;
+        top: 0px;
+        left: 105px;
+        height: 80px;
+        margin: 0;
+        line-height: 80px;
+        width: 400px;
+        font-size: 30px;
+        text-align: center;
+
+}
+
+.profile {
+        margin: 100px;
+        padding: 30px;
+        font-family: 'Arial', 'Helevtica Neue', Helvetica, sans-serif;
+        color: grey;
+        position: relative;
+        width: 960px;
+        height: 500px;
+        border: 1px solid#C0C0C0;
+        background-color: white
+}
+
+.onehalf {
+        line-height: 26pt;
+
+}
+
+#picture {
+        float: left;
+        margin: 20px;
+}
+
+h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #4aaaa5;
+        margin-top: 0;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid lightgrey;
+
+
+}
+
+button {
+        background-color: #4aaaa5;
+        font-size: 16px;
+        color: white;
+        padding: 14px 40px;
+        position: relative;
+        bottom: 20px;
+}
+
+#name,
+#email {
+        width: 900px;
+        height: 20px;
+        margin-top: 10px;
+}
+
+#message {
+        width: 900px;
+        height: 150px;
+        margin-top: 10px;
+}
+
+/*I used the following three classes to position my portfolio pictures*/
+
+.square {
+        position: relative;
+        float: left;
+        margin: 20px;
+        text-align: center;
+
+}
+
+.image {
+        size: 33%;
+        height: 200px;
+        width: 300px;
+
+}
+
+.text {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        background-color: #4aaaa5;
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        margin: 0;
+        padding-top: 20px;
+        height: 40px;
+
+}
+
+/* clearfix */
+
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+}
+
+
+@media screen and (max-width: 1500px) {
+        .profile {
+                position: relative;
+                margin-left: 100px;
+                height: auto;
+                width: 800px;
+        }
+
+        .grid {
+                width: 800px;
+        }
+
+
+        #name,
+        #email,
+        #message {
+                width: 600px;
+        }
+}
+
+@media screen and (max-width: 768px) {
+
+        .profile {
+                position: relative;
+                margin-left: 10px;
+                height: auto;
+                width: 620px;
+        }
+
+        .grid {
+                width: 600px;
+
+        }
+
+        .image {
+                height: 160px;
+                width: 250px;
+        }
+
+
+
+        #name,
+        #email,
+        #message {
+                width: 600px;
+        }
+}
+
+@media screen and (max-width: 742px) {
+        .links {
+                position: absolute;
+                top: 80px;
+                margin: auto;
+                left: 200px;
+
+
+        }
+
+        header {
+                height: 150px;
+                Position: static;
+
+        }
+
+        h1 {
+                margin-bottom: 250px;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                margin-left: 0;
+                left: 0;
+                padding-left: 0;
+                font-size: 15px;
+
+        }
+
+        .profile {
+
+                position: relative;
+                margin-left: 10px;
+                height: auto;
+                width: 600px;
+        }
+}
+
+@media screen and (max-width: 640px) {
+        .links {
+                position: absolute;
+                top: 80px;
+                margin: auto;
+                left: 100px;
+
+
+        }
+
+        header {
+                height: 150px;
+                Position: static;
+
+        }
+
+        h1 {
+                margin-bottom: 250px;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                margin-left: 0;
+                left: 0;
+                padding-left: 0;
+                font-size: 15px;
+
+        }
+
+        .profile {
+
+                position: relative;
+                margin-left: 10px;
+                height: auto;
+                width: 400px;
+        }
+
+        .grid {
+                width: 400px;
+
+        }
+
+        .image {
+                height: 160px;
+                width: 250px;
+        }
+
+
+
+        #name,
+        #email,
+        #message {
+                width: 350px;
+        }
+}
